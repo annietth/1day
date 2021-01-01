@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+}
+.container {
+    color: white;
+}
+.input {
+    border: 1px solid white;
+}

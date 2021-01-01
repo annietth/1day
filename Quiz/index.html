@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet 1 : Quiz</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Quiz Culture Générale 2020</h1>
+    <div class="container-global">
+
+        <form class="form-quiz">
+
+            <div class="question-block">
+
+                <h4>Avant l'arrivée des SMS, quelle technique utilisait des signes pour écrire rapidement?</h4>
+                
+                <div>
+                    <input type="radio" id="La typographie" name="q1" value="a" checked>
+                    <label for="La typographie">La typographie</label>
+                </div>
+                <div>
+                    <input type="radio" id="La cryptographie" name="q1" value="b">
+                    <label for="La cryptographie">La cryptographie</label>
+                </div>
+                <div>
+                    <input type="radio" id="La sténographie" name="q1" value="c">
+                    <label for="La sténographie">La sténographie</label>
+                </div>
+
+            </div>
+
+            <div class="question-block">
+
+                <h4>Quelle est la monnaie du Brésil ?</h4>
+                
+                <div>
+                    <input type="radio" id="Le réal" name="q2" value="a" checked>
+                    <label for="Le réal">Le réal</label>
+                </div>
+                <div>
+                    <input type="radio" id="L'escudo" name="q2" value="b">
+                    <label for="L'escudo">L'escudo</label>
+                </div>
+                <div>
+                    <input type="radio" id="Le dollar brésilien" name="q2" value="c">
+                    <label for="Le dollar brésilien">Le dollar brésilien</label>
+                </div>
+
+            </div>
+
+            <div class="question-block">
+
+                <h4>Qui est le fondateur de la Ve république?</h4>
+                
+                <div>
+                    <input type="radio" id="Charles de Gaulle" name="q3" value="a" checked>
+                    <label for="Charles de Gaulle">Charles de Gaulle</label>
+                </div>
+                <div>
+                    <input type="radio" id="François Mittérand" name="q3" value="b">
+                    <label for="François Mittérand">François Mittérand</label>
+                </div>
+                <div>
+                    <input type="radio" id="Bach" name="q3" value="c">
+                    <label for="Bach">Bach</label>
+                </div>
+
+            </div>
+
+            <div class="question-block">
+
+                <h4>Où peut-on trouver de la monnaie du Pape ?</h4>
+                
+                <div>
+                    <input type="radio" id="Dans le trésor de Notre-Dame de Paris" name="q4" value="a" checked>
+                    <label for="Dans le trésor de Notre-Dame de Paris">Dans le trésor de Notre-Dame de Paris</label>
+                </div>
+                <div>
+                    <input type="radio" id="Dans un jardin" name="q4" value="b">
+                    <label for="Dans un jardin">Dans un jardin</label>
+                </div>
+                <div>
+                    <input type="radio" id="Dans les poches des gardes suisses du Vatican" name="q4" value="c">
+                    <label for="Dans les poches des gardes suisses du Vatican">Dans les poches des gardes suisses du Vatican</label>
+                </div>
+
+            </div>
+
+            <div class="question-block">
+
+                <h4>Dans quel film entend-on cette réplique : « La vie c’est comme une boîte de chocolats, on ne sait jamais sur quoi on va tomber » ?</h4>
+                
+                <div>
+                    <input type="radio" id="La vie est un long fleuve tranquille" name="q5" value="a" checked>
+                    <label for="La vie est un long fleuve tranquille">La vie est un long fleuve tranquille</label>
+                </div>
+                <div>
+                    <input type="radio" id="Forrest Gump" name="q5" value="b">
+                    <label for="Forrest Gump">Forrest Gump</label>
+                </div>
+                <div>
+                    <input type="radio" id="La Arrête-moi si tu peux" name="q5" value="c">
+                    <label for="Arrête-moi si tu peux">Arrête-moi si tu peux</label>
+                </div>
+
+            </div>
+
+            <button type="submit">Validez vos choix !</button>
+
+        </form>
+        <div class="resultats">
+            <h2>Cliquez sur valider pour voir les résultats.</h2>
+            <p class="aide"></p>
+            <p class="note"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

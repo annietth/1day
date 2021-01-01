@@ -1,0 +1,47 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+h1 {
+    text-align: center;
+    font-size: 7vw;
+    margin-top: 20px;
+}
+.affichage {
+    background: #F1F1F1;
+    margin: 50px auto;
+    width: 70%;
+    max-width: 900px;
+    min-width: 500px;
+    display: flex; 
+    padding: 40px;
+    font-size: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bloc p:nth-child(1) {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.bloc:nth-child(1){
+    margin: 0 auto;
+    width: 70%;
+    max-width: 900px;
+    min-width: 500px;
+}
+.btn {
+    padding: 18px;
+    font-size: 25px;
+    width: 200px;
+}
+.container-btns {
+    display: flex;
+    justify-content: center;
+}

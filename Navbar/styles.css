@@ -1,0 +1,98 @@
+
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Poppins';
+    height: 100vh;
+    width: 100%;
+}
+
+.accueil {
+    height: 100vh;
+    width: 100%;
+    background: #333;
+    background: url('ressources/photo-1450849608880-6f787542c88a.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+}
+.contLogo {
+    height: 100%;
+    /* juste pour aligner le logo */
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.logo {
+    margin-left: 20px;
+    width: 40px;
+}
+
+.contItems {
+    font-size: 22px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.items {
+    margin-right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.items:hover {
+    color: #5f5f5f;
+}
+
+
+.logoMenuImg {
+    width: 30px;
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+
+}
+
+
+@media screen and (max-width: 700px) {
+    /* on fait apparaitre le logo */
+    .logoMenuImg {
+        display: block;
+    }
+    /* pour ne plus display flex les éléments */
+    .navbar {
+        display: block;
+    }
+    /* Pour espacer, fait à la fin */
+    .items:nth-child(1){
+        padding-top: 20px;
+    }
+    .items {
+        background: #eee;
+        /* background: green; */
+        /* pour la marge plus haut */
+        margin-right: 0;
+        padding: 10px 20px;
+        display: block;
+    }
+    
+    .contItems {
+        display: none;
+        border-top: 1px solid black;
+        /* background: green; */
+    }
+    /* Classe à toggle */
+    .responsive {
+        display: block;
+    }
+    
+
+} 
