@@ -1,0 +1,70 @@
+.cont-accodion {
+width: 90%;
+position: relative;
+/* padding: 2% 0; */
+margin: 0 auto;
+}
+.cont-accodion .accordion {
+font-size: 18px;
+background-color: #2d325c;
+color: #fff;
+cursor: pointer;
+padding: 1% 2%;
+width: 100%;
+text-align: left;
+outline: none;
+transition: 0.4s;
+font-weight: bold;
+border: none;
+text-transform: uppercase;
+padding-left: 2%;
+border-bottom: solid 1px #e5e5e5;
+}
+.cont-accodion .accordion::after {
+content: "";
+background-image: url(image/down-chevron.svg);
+width: 20px;
+height: 14px;
+position: absolute;
+right: 2%;
+}
+.cont-accodion .accordion.active-tab::after {
+content: "";
+background-image: url(image/up-arrow.png);
+width: 20px;
+height: 14px;
+position: absolute;
+right: 2%;
+}
+.cont-accodion .panel {
+padding: 2% 2%;
+display: none;
+background-color: #fff;
+overflow: hidden;
+/* width: 96%; */
+width: 100%;
+border-bottom: solid 1px #e5e5e5;
+color: #000;
+margin-bottom: 10px;
+}
+
+.active-tab,
+.accordion:hover {
+background-color: aliceblue;
+}
+@media only screen and (max-width: 767px) {
+.cont-accodion {
+    width: 100%;
+}
+.cont-accodion .accordion {
+    line-height: 2;
+    font-size: 12px;
+}
+
+.cont-accodion .accordion::after {
+    margin-top: 5px;
+}
+.cont-accodion .accordion.active-tab::after {
+    margin-top: 5px;
+}
+}
