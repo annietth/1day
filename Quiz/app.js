@@ -1,4 +1,4 @@
-const form = document.querySelector('.form-quizz');
+const button = document.querySelector('.button');
 let tableauResultats = [];
 const reponses = ['c','a','b','a','c'];
 const emojis = ['✔️','✨','👀','😭','👎'];
@@ -8,10 +8,10 @@ const aideResultat = document.querySelector('.aide');
 const toutesLesQuestions = document.querySelectorAll('.question-block');
 let verifTableau = [];
 
-form.addEventListener('submit', (e) => {
+button.addEventListener('click', (e) => {
     e.preventDefault();
 
-    for(i = 1; i < 6; i++) {
+    for(i = 1; i < toutesLesQuestions.length; i++) {
         tableauResultats.push(document.querySelector(`input[name="q${i}"]:checked`).value)
     }
     verifFunc(tableauResultats);
@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) => {
 
 function verifFunc(tabResultats) {
 
-    for(let a = 0; a < 5; a++){
+    for(let a = 0; a < toutesLesQuestions.length; a++){
 
         if(tabResultats[a] === reponses[a]) {
             verifTableau.push(true);
